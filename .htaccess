@@ -1,0 +1,46 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+ErrorDocument 404 /Hermer/views/ErrorView.php
+RewriteRule ^home.html$  index.php [L]
+RewriteRule ^about.html$  index.php?controller=about [L]
+RewriteRule ^allproducts.html$  index.php?controller=products&action=allproducts [L]
+RewriteRule ^news.html$  index.php?controller=news [L]
+RewriteRule ^cart.html$  index.php?controller=cart [L]
+RewriteRule ^contact.html$  index.php?controller=contact&action=create [L]
+RewriteRule ^contact/thanhcong.html$ index.php?controller=contact&action=create&notify=thanhcong
+RewriteRule ^error.html$  index.php?controller=error [L]
+RewriteRule ^products/subcategory/(.*)/(.*).html$  index.php?controller=products&action=category&id=$1 [L]
+RewriteRule ^products/subcategory1/(.*).html$  index.php?controller=products&action=category&id=$1 [L]
+RewriteRule ^products/category/(.*)/(.*).html$  index.php?controller=products&action=allproducts1&id=$1 [L]
+RewriteRule ^products/detail/(.*)/(.*).html$  index.php?controller=products&action=detail&id=$1 [L]
+RewriteRule ^news/detail/(.*)/(.*).html$  index.php?controller=news&action=detail&id=$1 [L]
+RewriteRule ^products/rating/(.*).html$  index.php?controller=products&action=detail&id=$1 [L]
+RewriteRule ^search/key=(.*).html$  index.php?controller=search&action=name&key=$1 [L]
+RewriteRule ^search/fromPrice=(.*)&toPrice=(.*).html$ index.php?controller=search&action=price&fromPrice=$1&toPrice=$2
+RewriteRule ^search/color=(.*).html$  index.php?controller=search&action=color&key=$1 [L]
+RewriteRule ^search/size=(.*).html$  index.php?controller=search&action=size&key=$1 [L]
+RewriteRule ^allproducts-sort-order=(.*).html$  index.php?controller=products&action=allproducts&order=$1 [L]
+RewriteRule ^allproducts/page=(.*).html$  index.php?controller=products&action=allproducts&p=$1 [L]
+RewriteRule ^category-sort-order=(.*)-(.*).html$  index.php?controller=products&action=allproducts1&id=$1&order=$2 [L]
+RewriteRule ^category/page=(.*)-(.*).html$  index.php?controller=products&action=allproducts1&id=$1&p=$2 [L]
+RewriteRule ^subcategory-sort-order=(.*)-(.*).html$  index.php?controller=products&action=category&id=$1&order=$2 [L]
+RewriteRule ^subcategory/page=(.*)-(.*).html$  index.php?controller=products&action=category&id=$1&p=$2 [L]
+RewriteRule ^color-sort-order=(.*)-(.*).html$  index.php?controller=search&action=color&key=$1&order=$2 [L]
+RewriteRule ^color/page=(.*)-(.*).html$  index.php?controller=search&action=color&key=$1&p=$2 [L]
+RewriteRule ^price-sort-order/fromPrice=(.*)-toPrice=(.*)-(.*).html$  index.php?controller=search&action=price&fromPrice=$1&toPrice=$2&order=$3 [L]
+RewriteRule ^price/fromPrice=(.*)-toPrice=(.*)-page=(.*).html$  index.php?controller=search&action=price&fromPrice=$1&toPrice=$2&p=$3 [L]
+RewriteRule ^size-sort-order/size=(.*)-(.*).html$  index.php?controller=search&action=size&key=$1&order=$2 [L]
+RewriteRule ^size/page=(.*)-(.*)$  index.php?controller=search&action=size&key=$1&p=$2 [L]
+RewriteRule ^name-sort-order=(.*)-(.*).html$  index.php?controller=search&action=name&key=$1&order=$2 [L]
+RewriteRule ^name/page=(.*)-(.*).html$  index.php?controller=search&action=name&key=$1&p=$2 [L]
+RewriteRule ^news/page=(.*).html$  index.php?controller=news&p=$1 [L]
+RewriteRule ^checkout1.html$  index.php?controller=cart&action=checkout [L]
+RewriteRule ^checkout.html$ index.php?controller=cart&action=paysuccess [L]
+RewriteRule ^login.html$ index.php?controller=account&action=login
+RewriteRule ^register.html$ index.php?controller=account&action=register
+RewriteRule ^updatesucsess.html$ index.php?controller=account&action=updatesucsess
+RewriteRule ^update/(.*).html$ index.php?controller=account&action=update&id=$1
+RewriteRule ^register/error.html$ index.php?controller=account&action=register&notify=error
+RewriteRule ^login/error.html$ index.php?controller=account&action=login&notify=error
+RewriteRule ^verify/error.html$ index.php?controller=account&action=login&verify=error

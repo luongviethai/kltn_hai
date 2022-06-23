@@ -1,0 +1,49 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+ErrorDocument 404 /Hermer/views/ErrorView.php
+RewriteRule ^login-admin.html$ index.php?controller=login
+
+RewriteRule ^categories.html$ index.php?controller=categories
+RewriteRule ^categories/(.*).html$ index.php?controller=categories&action=update&id=$1
+RewriteRule ^categories-create.html$  index.php?controller=categories&action=create
+RewriteRule ^categories&page-(.*).html$  index.php?controller=categories&p=$1
+
+RewriteRule ^products.html$ index.php?controller=products
+RewriteRule ^products/(.*).html$ index.php?controller=products&action=update&id=$1
+RewriteRule ^products-create.html$  index.php?controller=products&action=create
+RewriteRule ^products&page-(.*).html$  index.php?controller=products&p=$1
+
+RewriteRule ^orders.html$ index.php?controller=orders
+RewriteRule ^orders/(.*).html$ index.php?controller=orders&action=detail&id=$1
+RewriteRule ^orders&page-(.*).html$  index.php?controller=orders&p=$1
+
+RewriteRule ^news.html$ index.php?controller=news
+RewriteRule ^news/(.*).html$ index.php?controller=news&action=update&id=$1
+RewriteRule ^news-create.html$  index.php?controller=news&action=create
+RewriteRule ^news&page-(.*).html$  index.php?controller=news&p=$1
+
+
+RewriteRule ^slider.html$ index.php?controller=slider
+RewriteRule ^slider/(.*).html$ index.php?controller=slider&action=update&id=$1
+RewriteRule ^slider-create.html$  index.php?controller=slider&action=create
+RewriteRule ^slider&page-(.*).html$  index.php?controller=slider&p=$1
+
+RewriteRule ^panel.html$ index.php?controller=panel
+RewriteRule ^panel/(.*).html$ index.php?controller=panel&action=update&id=$1
+RewriteRule ^panel&page-(.*).html$  index.php?controller=panel&p=$1
+
+RewriteRule ^users.html$ index.php?controller=users
+RewriteRule ^users/(.*).html$ index.php?controller=users&action=update&id=$1
+RewriteRule ^users-create.html$  index.php?controller=users&action=create
+RewriteRule ^users&page-(.*).html$  index.php?controller=users&p=$1
+RewriteRule ^users&create-error.html$ index.php?controller=users&action=create&notify=email-exists
+
+RewriteRule ^customers.html$ index.php?controller=customers
+RewriteRule ^customers/(.*).html$ index.php?controller=customers&action=update&id=$1
+RewriteRule ^customers&page-(.*).html$  index.php?controller=customers&p=$1
+
+RewriteRule ^contact.html$ index.php?controller=contacts
+RewriteRule ^contact/(.*).html$ index.php?controller=contacts&action=detail&id=$1
+
+RewriteRule ^home.html$ index.php?controller=home

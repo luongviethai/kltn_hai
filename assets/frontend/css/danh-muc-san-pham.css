@@ -1,0 +1,414 @@
+
+/*body---------------------------------------------*/
+
+ul.breadcrumb {
+  padding: 5px 5px;
+  list-style: none;
+  background-color: white;
+}
+ul.breadcrumb li {
+  display: inline;
+  font-size: 12px;
+}
+
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+.body-breadcrumb
+{
+	margin-top: 10px;
+	margin-left:45px;
+}
+.main .left{
+	float: left;
+	width: 292px;
+	margin-left: 50px;
+}
+
+.item_search-box{
+	border: 1px solid #dedede;
+	width: 262px;
+	height: 123px;
+	margin-bottom: 20px;
+}
+.item_search-box1{
+	border: 1px solid #dedede;
+	width: 262px;
+	height: 170px;
+	margin-bottom: 20px;
+}
+.item_search-box4{
+	border: 1px solid #dedede;
+	width: 262px;
+	height: 100px;
+	margin-bottom: 20px;
+}
+.item_search-box2{
+	border: 1px solid #dedede;
+	width: 262px;
+	height: 150px;
+	margin-bottom: 20px;
+}
+.item_search-box3{
+	border: 1px solid #dedede;
+	width: 262px;
+	height: 150px;
+	margin-bottom: 20px;
+}
+.title-left{
+	width:260px ;
+	padding: 15px;
+	display: inline-block;
+	border-bottom: 1px solid #dedede;
+	font-size: 14px;
+	color: #ba933e;
+		font-family: 'Quicksand';
+		font-weight: bold;
+		
+}
+.left a:hover{
+text-decoration: none;
+	color: #ba933e;
+	}
+.item_search-box input{
+	color: #ddd;
+		font-size: 12px;
+		font-family: 'Quicksand';
+		border: 1px solid #ddd;
+		padding: 5px;
+		width: 200px;
+		margin-top: 20px;
+		margin-left: 30px;
+
+
+}
+
+/*-----------------------------*/
+.item_search-box1 .container{
+	margin-top: 40px;
+}
+.checkbox
+{
+	margin-left: 50px;
+}
+.checkbox input{
+font-family: 'Quicksand';
+
+}
+.checkbox label{
+		font-family: 'Quicksand';
+			font-size: 12px;
+			margin-left: -10px;
+}
+
+.color{
+	width: 230px;
+	margin-top: 10px;
+	margin-left: 15px;
+}
+.size{
+	width: 230px;
+	margin-top: 10px;
+	margin-left: 15px;
+}
+
+.main .right{
+	width: 847.5px;
+	float: left;
+}
+.top-list-product
+{line-height: 56px;
+	height: 56px;
+	margin-left: ;
+	background: #f0f0f0;
+}
+.top-list-product h1{
+font-size: 12px;
+font-family: 'Quicksand';
+float: left;
+line-height: 56px;
+margin-top: 3px;
+}
+.top-list-product h2{
+font-size: 20px;
+line-height: 56px;
+font-family: 'Quicksand';
+font-weight: bold;
+float: left;
+}
+.title-list-product
+{
+	margin-left: 20px;
+}
+.dropdown
+{
+	text-align: right;
+	margin-right:120px;
+}
+.dropdown button{
+	font-family: 'Quicksand';
+	font-size: 14px;
+}
+.sosanpham{
+	font-family: 'Quicksand';
+}
+
+
+.top-list-product
+{
+position: relative;
+border: 1px solid #ddd;
+}
+
+
+.dropdown ul{
+  margin-left: 650px;
+  margin-top: -10px;
+}
+.dropdown-menu a
+{
+font-size: 11px;
+font-family: 'Quicksand';
+}
+.view-style{
+	position: absolute;
+	top: 1px;
+	right: 0px;
+}
+.view-style i{
+	font-size: 16px;
+	padding: 15px;
+		color: #444;
+		display: inline-block;
+		border-left: 1px solid #ddd;
+}
+.list-product
+{ 
+	margin-top: 20px;
+	width: 847px;
+
+}
+.list-product-content{
+display: flex;
+}
+.list-product ul{
+margin: 0px;
+padding: 0px;
+}
+.list-product ul li{
+padding-bottom: 30px;
+}
+.product-img
+{
+	border: 1px solid #ddd;
+}
+.product-img img
+{
+	
+	width: 250px;
+	height: 300px;
+}
+
+
+.product-content
+{
+	margin-left: 20px;
+}
+.product-content a
+{
+	font-size: 14px;
+	color: #333;
+    font-weight: 700;
+	font-family: 'Quicksand';
+}
+.product-content a:hover
+{
+	text-decoration: none;
+}
+
+.product-content .price
+{
+color: red;
+margin-top: 5px;
+font-family: 'Quicksand';
+font-weight: bold;
+font-size: 16px;
+}
+
+
+.product-content .desc
+{
+color: #333;
+margin-top: 5px;
+font-family: 'Quicksand';
+font-size: 12px;
+}
+
+.buy-product-btn
+{
+	margin-top: 20px;
+
+}
+.buy-product-btn button
+{
+    width: 150px;
+	padding: 15px 1px 15px 30px;
+	border-radius: 30px;
+font-family: 'Quicksand';
+font-size: 11px;
+color: black;
+font-weight: bold;
+}
+.buy-product-btn{
+	position: relative;
+}
+.buy-product-btn button:hover
+{
+    background: #ba933e;
+    border: 1px solid #ba933e;
+}
+.buy-product-btn i{
+	color: black;
+	font-size: 20px;
+	position: absolute;
+	top: 15px;
+	left: 30px;
+
+}
+
+.name-product a{
+	text-decoration: none;
+}
+.name-product a:hover{
+	font-weight: bold ;
+	color:#ba933e ;
+	text-decoration: none;
+}
+.name-product a:visited{
+	color:#ba933e ;
+}
+.header-bottom .menu-top{
+font-family: 'Quicksand';
+}
+.price .price-before{
+	margin-left: 5px;
+	text-decoration: line-through;
+	color: #333;
+	font-size: 14px;
+	font-weight: bold;
+	font-family: 'Quicksand';
+}
+.footer{
+	width: 1300px;
+	position: absolute;
+	top: 2200px;
+}
+.body{
+	position: relative;
+}
+.footer-bottom
+{
+	display: inline-block;
+}
+.list-product-content .product-img
+{
+ overflow: hidden;
+    width: 250px;
+	height: 300px;
+}
+.list-product-content .product-img img:hover {
+  transform: scale(1.1); 
+
+}
+
+.list-product-content .product-img img
+{
+	transition-duration : 1s;
+
+}
+.hot-product
+{
+	width: 262.5px;height: 560px;
+	border: 1px solid #dedede;
+    
+	margin-bottom: 20px;
+	
+}
+.hot-product > a{
+	display: inline-block;
+	color: white;
+	background: #ba933e;
+}
+.product-img1
+{
+	display: flex;
+}
+.list-hot-product > ul
+{
+margin: 0px;
+padding: 0px;
+}
+.list-hot-product > ul > li
+{
+
+padding: 10px;
+border-bottom: 1px solid #dedede;
+
+}
+.list-hot-product > ul > li:last-child
+{
+
+border: 0px;
+
+}
+.product-img1 img
+{
+width: 60px;
+height: 80px;
+}
+
+.product-hot-title
+{
+	margin-left: 10px;
+	margin-top: 3px;
+}
+.product-hot-title a
+{
+	font-size: 14px;
+	color: #333;
+		font-family: 'Quicksand';
+
+}
+
+.product-hot-title .price
+{
+	font-size: 16px;
+}
+.gia{
+	margin-top: 15px;
+		font-family: 'Quicksand';
+}
+.price-before
+{
+	text-decoration: line-through;
+}
+.price
+{
+	color: red;
+	font-weight: 600;
+}
+
+.view-style a:hover{
+	text-decoration: none;
+}
+
+
+/*----------------------------------- respomsive*/
+
+
+}
